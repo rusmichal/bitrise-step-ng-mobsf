@@ -1,0 +1,68 @@
+title: |-
+  ng-mobsf-step
+summary: |
+  asdasd
+description: |
+  asdasda
+website: https://github.com/rusmichal/bitrise-step-ng-mobsf-step
+source_code_url: https://github.com/rusmichal/bitrise-step-ng-mobsf-step
+support_url: https://github.com/rusmichal/bitrise-step-ng-mobsf-step/issues
+host_os_tags:
+  - osx-10.10
+  - ubuntu-16.04
+
+project_type_tags:
+  - ios
+  - android
+
+type_tags:
+  - deploy
+
+is_requires_admin_user: true
+is_always_run: false
+is_skippable: true
+run_if: ""
+
+deps:
+  brew:
+  - name: git
+  - name: wget
+  apt_get:
+  - name: git
+  - name: wget
+
+
+toolkit:
+  bash:
+    entry_file: step.sh
+
+
+inputs:
+  - mobsf_api_url:
+    opts:
+      title: "Mobsf API"
+      summary: Mobile security framework API url.
+      description: |
+        Provide API url to instance of your MobSF. It is used to upload application file.
+      is_expand: true
+      is_required: true
+      value_options: []
+  - api_token:
+      opts:
+        title: "API token"
+        summary: Mobile security framework API token.
+        description: |
+          MobSF API requried authentication token. You can find it in API docs.
+        is_expand: true
+        is_required: true
+        value_options: []
+
+outputs:
+  - EXAMPLE_STEP_OUTPUT:
+    opts:
+      title: "Example Step Output"
+      summary: Summary. No more than 2-3 sentences.
+      description: |
+        Description of this output.
+
+        Can be Markdown formatted text.
