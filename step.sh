@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex
 
-echo "'bITRISE_BUILD_URL': $BITRISE_BUILD_URL"
+echo "'mobsf_api_url': ${mobsf_api_url}"
 
 #
 # --- Export Environment Variables for other Steps:
