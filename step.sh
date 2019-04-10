@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex
 
-echo "'mobsf_api_url': ${mobsf_api_url}"
+echo "'mobsf_api_url': $BITRISE_APK_PATH"
 
 #
 # --- Export Environment Variables for other Steps:

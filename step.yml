@@ -43,7 +43,7 @@ inputs:
       title: "Mobsf API"
       summary: Mobile security framework API url.
       description: |
-        Provide API url to instance of your MobSF. It is used to upload application file.
+        Provide API url to instance of your MobSF. It is used to upload application file and generating reports.
       is_expand: true
       is_required: true
       value_options: []
