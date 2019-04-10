@@ -56,15 +56,15 @@ inputs:
         is_expand: true
         is_required: true
         value_options: []
-    - artifact_path:
-        opts:
-          title: "Build artifact path"
-          summary: Android application package (.apk).
-          description: |
-            Path to the build artifact file (.apk).
-          is_expand: true
-          is_required: true
-          value_options: []
+  - artifact_path:
+      opts:
+        title: "Build artifact path"
+        summary: Android application package (.apk).
+        description: |
+          Path to the build artifact file (.apk).
+        is_expand: true
+        is_required: true
+        value_options: []
 
 outputs:
   - EXAMPLE_STEP_OUTPUT:
