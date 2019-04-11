@@ -1,9 +1,7 @@
 #!/bin/bash
 set -ex
 
-echo "'mobsf_api_url': ${artifact_path}"
-
-curl -F "file=@${artifact_path}" ${mobsf_api_url} -H "Authorization:${api_token}"
+curl -F "file=@${artifact_path}" ${mobsf_api_url}/api/v1/upload -H "Authorization:${api_token}"
 #
 # --- Export Environment Variables for other Steps:
 # You can export Environment Variables for other Steps with
