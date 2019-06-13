@@ -1,6 +1,6 @@
 # ng-mobsf-step
 
-This step let you integrate development workflow with Mobile Security Framework. As a developer you can add the step to your piple line. The step sends APK/IPA/ZIP file to the framework using MobSF API and runs penetration tests.
+This step lets you integrate development workflow with Mobile Security Framework. As a developer you can add the step to your pipleline. The step sends APK/IPA/ZIP file to the framework using MobSF API and runs penetration tests.
 
 ## How to use this Step
 
@@ -8,7 +8,7 @@ Add step definition.
 ```YML
  comment:
     steps:
-      - git::https://github.com/netguru/bitrise-step-ng-mobsf.git@master:
+      - git::https://github.com/rusmichal/bitrise-step-ng-mobsf.git@master:
         title: ng-mobsf
         inputs:
         - mobsf_api_url: "$MOBSF_API_URL"
