@@ -20,7 +20,7 @@ Add step definition.
 
 `BITRISE_SIGNED_APK_PATH` - Path to the build artifact file (.apk|.ipa). This is output variable of assemble step.
 
-`MOBSF_API_TOKEN` - MobSF API requried authentication token. You can find it in API docs.
+`MOBSF_API_TOKEN` - MobSF API requires authentication token. You can find it in API docs.
 
 
 ## How to contribute to this Step
