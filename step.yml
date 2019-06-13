@@ -1,9 +1,9 @@
 title: |-
   ng-mobsf-step
 summary: |
-  asdasd
+  Send app file (.apk|.ipa) to instance of Mobile Security Framework.
 description: |
-  asdasda
+  This step let you integrate development workflow with Mobile Security Framework. As a developer you can add the step to your piple line. The step sends APK/IPA/ZIP file to the framework using MobSF API and runs penetration tests.
 website: https://github.com/rusmichal/bitrise-step-ng-mobsf-step
 source_code_url: https://github.com/rusmichal/bitrise-step-ng-mobsf-step
 support_url: https://github.com/rusmichal/bitrise-step-ng-mobsf-step/issues
@@ -31,11 +31,9 @@ deps:
   - name: git
   - name: wget
 
-
 toolkit:
   bash:
     entry_file: step.sh
-
 
 inputs:
   - mobsf_api_url:
