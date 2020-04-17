@@ -1,7 +1,10 @@
 #!/bin/bash
 set -ex
 
+MD5_HASH=$(md5 -q ${artifact_path})
 curl -F "file=@${artifact_path}" ${mobsf_api_url}/api/v1/upload -H "Authorization:${api_token}"
+curl -o scan.json -X POST --url ${mobsf_api_url}/api/v1/scan --data "scan_type=${artifact_path#*.}&file_name=${artifact_path##*/}&hash=${MD5_HASH}" -H "Authorization:${api_token}"
+
 #
 # --- Export Environment Variables for other Steps:
 # You can export Environment Variables for other Steps with

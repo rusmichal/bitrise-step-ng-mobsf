@@ -4,9 +4,9 @@ summary: |
   Send app file (.apk|.ipa) to instance of Mobile Security Framework.
 description: |
   This step let you integrate development workflow with Mobile Security Framework. As a developer you can add the step to your piple line. The step sends APK/IPA/ZIP file to the framework using MobSF API and runs penetration tests.
-website: https://github.com/rusmichal/bitrise-step-ng-mobsf-step
-source_code_url: https://github.com/rusmichal/bitrise-step-ng-mobsf-step
-support_url: https://github.com/rusmichal/bitrise-step-ng-mobsf-step/issues
+website: https://github.com/Censio/bitrise-step-ng-mobsf
+source_code_url: https://github.com/Censio/bitrise-step-ng-mobsf
+support_url: https://github.com/Censio/bitrise-step-ng-mobsf
 host_os_tags:
   - osx-10.10
   - ubuntu-16.04
@@ -50,16 +50,16 @@ inputs:
       title: "API token"
       summary: Mobile security framework API token.
       description: |
-        MobSF API requried authentication token. You can find it in API docs.
+        MobSF API requried authentication token. You can find it in the API docs.
       is_expand: true
       is_required: true
       value_options: []
   - artifact_path:
     opts:
       title: "Build artifact path"
-      summary: Android application package (.apk).
+      summary: Application package (.apk or .ipa).
       description: |
-        Path to the build artifact file (.apk).
+        Path to the build artifact file (.apk or .ipa).
       is_expand: true
       is_required: true
       value_options: []
